@@ -1,7 +1,7 @@
-import React from 'react';
-import { ArrowRight, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { supabase } from '../lib/supabase';
+import React from "react";
+import { ArrowRight, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+import { supabase } from "../lib/supabase";
 
 const Home = () => {
   const [soulCount, setSoulCount] = React.useState(0);
@@ -9,8 +9,8 @@ const Home = () => {
   React.useEffect(() => {
     const fetchSoulCount = async () => {
       const { data } = await supabase
-        .from('soul_count')
-        .select('count')
+        .from("soul_count")
+        .select("count")
         .single();
       if (data) {
         setSoulCount(data.count);
@@ -73,7 +73,6 @@ const Home = () => {
               Welcome to Reachout To All. Here, every soul counts. We are on a
               mission to reach out to all people with the gospel, accompanied by
               a humanitarian touch of love.
-
             </p>
             <Link
               to="/get-involved"
@@ -124,7 +123,7 @@ const Home = () => {
                   href={item.value}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
+                  className="text-blue-600 hover:underline truncate"
                 >
                   {item.value}
                 </a>
@@ -136,7 +135,6 @@ const Home = () => {
         </div>
       </div>
 
-
       {/* Soul Count Section */}
       <section className="bg-blue-900 text-white py-16">
         <div className="container mx-auto px-4 text-center">
@@ -145,7 +143,9 @@ const Home = () => {
             <h2 className="text-4xl font-bold">Souls Won for Christ</h2>
           </div>
           <div className="text-6xl font-bold mb-4">{soulCount}</div>
-          <p className="text-xl">Lives transformed by the power of the Gospel</p>
+          <p className="text-xl">
+            Lives transformed by the power of the Gospel
+          </p>
         </div>
       </section>
 
@@ -153,7 +153,9 @@ const Home = () => {
       <section className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
         <div className="bg-white rounded-lg shadow-lg p-6">
           <h3 className="text-2xl font-bold mb-4">Upcoming Events</h3>
-          <p className="mb-4">Join us in our upcoming mission activities and events.</p>
+          <p className="mb-4">
+            Join us in our upcoming mission activities and events.
+          </p>
           <Link to="/events" className="text-blue-600 hover:underline">
             View Events →
           </Link>
@@ -161,7 +163,9 @@ const Home = () => {
 
         <div className="bg-white rounded-lg shadow-lg p-6">
           <h3 className="text-2xl font-bold mb-4">Get Involved</h3>
-          <p className="mb-4">Discover ways to contribute to our mission work.</p>
+          <p className="mb-4">
+            Discover ways to contribute to our mission work.
+          </p>
           <Link to="/get-involved" className="text-blue-600 hover:underline">
             Learn More →
           </Link>
@@ -169,7 +173,9 @@ const Home = () => {
 
         <div className="bg-white rounded-lg shadow-lg p-6">
           <h3 className="text-2xl font-bold mb-4">Resources</h3>
-          <p className="mb-4">Access sermons, podcasts, and other spiritual materials.</p>
+          <p className="mb-4">
+            Access sermons, podcasts, and other spiritual materials.
+          </p>
           <Link to="/resources" className="text-blue-600 hover:underline">
             Browse Resources →
           </Link>
