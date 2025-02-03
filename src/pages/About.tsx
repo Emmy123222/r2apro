@@ -1,4 +1,4 @@
-import image from "../assets/pastorBawa.png";
+import image from "../assets/pastor.png";
 
 const About = () => {
   return (
@@ -14,9 +14,9 @@ const About = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-2xl text-white">
+          <div className="max-w-2xl text-white ">
             <h1 className="text-5xl font-bold mb-4">About Us</h1>
-            <p className="text-lg leading-snug max-w-3xl mx-auto  break-words italic">
+            <p className="text-lg leading-snug max-w-3xl mx-auto  break-words italic max-sm:text-[16px]">
               We are a group of believers from diverse denominations, united by
               a passion for missions. We aim to reach out to people everywhere,
               enabling their salvation, rededication, commitment, and

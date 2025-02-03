@@ -53,7 +53,7 @@ const Footer = () => {
                 <a href="tel:+1234567890">+2347037043343,+2348123605848</a>
               </li>
               <li className="flex ">
-                <MapPin className="h-20 w-20 mr-2 mb-12" />
+                <MapPin className="h-20 w-20 mr-2 mb-12 max-sm:h-16 max-sm:w-16" />
                 <span>
                   Suite 5, Victory Plaza, Opposite Concord Garden, Adjacent
                   U/Boro New Market l, Sabon Tasha, Kaduna State, Nigeria.
