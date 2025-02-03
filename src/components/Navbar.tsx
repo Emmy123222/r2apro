@@ -32,7 +32,11 @@ const Navbar = () => {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.5 }}
             >
-              <img src={image} alt="" className="h-8 w-8" />
+              <img
+                src={image}
+                alt=""
+                className="h-8 w-8 bg-white rounded-[26px]"
+              />
               {/* <Globe className="h-8 w-8" /> */}
             </motion.div>
             <span className="font-bold text-xl group-hover:text-blue-200 text-white transition-colors">

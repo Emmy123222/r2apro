@@ -9,7 +9,11 @@ const Footer = () => {
           {/* About */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src={image} alt="" className="h-8 w-8" />
+              <img
+                src={image}
+                alt=""
+                className="h-8 w-8 bg-white rounded-[26px]"
+              />
               <span className="font-bold text-lg">Reach Out To All</span>
             </div>
             <p className="text-blue-200">
